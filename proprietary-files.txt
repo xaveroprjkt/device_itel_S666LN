@@ -2373,10 +2373,10 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
 # Media (Common)
-vendor/lib/AVCSecureVdecCA.so
-vendor/lib/HEVCSecureVdecCA.so
-vendor/lib/VP9SecureVdecCA.so
-vendor/lib/libAVCSecureVencCA.so
+vendor/lib/AVCSecureVdecCA_510.so
+vendor/lib/HEVCSecureVdecCA_510.so
+vendor/lib/VP9SecureVdecCA_510.so
+vendor/lib/libAVCSecureVencCA_510.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libbwc.so
@@ -2401,10 +2401,10 @@ vendor/lib/mt6789/libvcodec_utility_v3a.so
 vendor/lib/mt6789/libvcodecdrv.so
 vendor/lib/mt6789/libvcodecdrv_v3a.so
 vendor/lib/mt6789/libvpudv3a_vcodec.so
-vendor/lib64/AVCSecureVdecCA.so
-vendor/lib64/HEVCSecureVdecCA.so
-vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/libAVCSecureVencCA.so
+vendor/lib64/AVCSecureVdecCA_510.so
+vendor/lib64/HEVCSecureVdecCA_510.so
+vendor/lib64/VP9SecureVdecCA_510.so
+vendor/lib64/libAVCSecureVencCA_510.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
 vendor/lib64/libmp3dec_mtk.so
@@ -2769,9 +2769,6 @@ vendor/lib64/libminizip.so
 vendor/lib64/libtranlog.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
-
-# Transsion Camera - from Irawans ROM 
-app/TranssionCamera/TranssionCamera.apk
 
 # vibrator
 vendor/lib/libvibrator.so
