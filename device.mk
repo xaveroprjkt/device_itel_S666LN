@@ -79,8 +79,7 @@ PRODUCT_PACKAGES += \
     libprocessgroup.vendor
 
 PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer \
-    MtkInCallService
+    DSPVolumeSynchronizer
 
 
 PRODUCT_COPY_FILES += \
