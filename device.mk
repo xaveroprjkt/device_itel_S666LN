@@ -277,7 +277,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
-    android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor:64
 
 # Lights
@@ -426,17 +425,12 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio@1.6.vendor \
-    libprotobuf-cpp-full.vendor \
-    libprotobuf-cpp-lite.vendor \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    android.hardware.radio@1.6.vendor
 
 # Required for QPR3
 PRODUCT_PACKAGES += \
     liblz4.vendor \
     libmemunreachable.vendor \
-    libhidlbase_shim \
     libjsoncpp.vendor \
     libziparchive.vendor \
     libsqlite.vendor \
