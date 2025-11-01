@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer \
     MtkInCallService
 
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -257,7 +258,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, vendor/motorola-dolby/setup.mk)
 
 # Include releasekeys
--include vendor/orion-priv/keys/keys.mk
+-include vendor/lineage-priv/keys/keys.mk
 
 # Keylayout
 PRODUCT_COPY_FILES += \
