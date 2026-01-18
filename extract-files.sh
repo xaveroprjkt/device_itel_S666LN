@@ -88,13 +88,13 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             ;;
         vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             grep -q libshim_camera_metadata.so "${2}" || "${PATCHELF}" --add-needed libshim_camera_metadata.so "${2}"
             ;;
         vendor/bin/hw/mt6789/camerahalserver)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
-            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
-            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             ;;
         system_ext/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "${PATCHELF}" --add-needed libshim_ui.so "${2}"
