@@ -504,13 +504,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
-    android.hardware.wifi@1.0-service-lazy 
-    
+    android.hardware.wifi@1.0-service-lazy \
+    libkeystore-wifi-hidl:64 \
+    libkeystore-engine-wifi-hidl:64
+
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor
-    
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
