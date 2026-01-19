@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/hw/android.hardware.vibrator-service.mediatek)
+            "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
+            ;;
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
