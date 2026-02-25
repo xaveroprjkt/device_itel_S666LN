@@ -17,3 +17,9 @@ cc_library_shared {
     ],
 }
 
+cc_library {
+    name: "libshim_camera_metadata",
+    shared_libs: ["libcamera_metadata"],
+    srcs: ["libshim_camera_metadata.cpp"],
+    vendor: true,
+}
