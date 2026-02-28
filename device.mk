@@ -235,7 +235,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
-    libshim_camera_metadata \
     libshim_ui \
     libshim_sink
 
